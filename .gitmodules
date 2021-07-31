@@ -1,0 +1,6 @@
+[submodule "pcb/kbd"]
+	path = pcb/kbd
+	url = https://github.com/foostan/kbd
+[submodule "pcb/MX_Alps_Hybrid"]
+	path = pcb/MX_Alps_Hybrid
+	url = https://github.com/chsupark/MX_Alps_Hybrid
