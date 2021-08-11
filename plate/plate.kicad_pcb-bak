@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 208)
-    (tracks 0)
+    (tracks 1)
     (zones 0)
     (modules 0)
     (nets 1)
@@ -309,5 +309,7 @@
   (gr_arc (start 141.68497 136.825519) (end 141.18497 136.825519) (angle -90) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 82.50997 139.85052) (end 194.80997 139.85052) (layer Edge.Cuts) (width 0.1))
   (gr_arc (start 141.68497 123.82552) (end 141.68497 123.32552) (angle -90) (layer Edge.Cuts) (width 0.1))
+
+  (via (at 138.66021 101.75068) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
 
 )
