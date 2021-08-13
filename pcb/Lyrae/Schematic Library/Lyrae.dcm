@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ProMicro
+D Symbol for Arduino Pro Micro
+K Arduino,Pro Micro,Atmega
+F N/A
+$ENDCMP
+#
+#End Doc Library

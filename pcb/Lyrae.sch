@@ -13,78 +13,56 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L kbd:ProMicro U1
-U 1 1 60E338ED
-P 2000 1650
-F 0 "U1" H 2000 2487 60  0000 C CNN
-F 1 "ProMicro" H 2000 2381 60  0000 C CNN
-F 2 "kbd:ProMicro_v3" H 2100 600 60  0001 C CNN
-F 3 "" H 2100 600 60  0000 C CNN
-	1    2000 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1300 1300 1200 1300
+	1450 1300 1350 1300
 Wire Wire Line
-	1200 1300 1200 1400
+	1350 1300 1350 1400
 Wire Wire Line
-	1200 1400 1300 1400
+	1350 1400 1450 1400
 Wire Wire Line
-	1200 1400 1000 1400
-Connection ~ 1200 1400
+	1350 1400 1150 1400
+Connection ~ 1350 1400
 $Comp
 L power:GND #PWR02
 U 1 1 60E35F0B
-P 1000 1400
-F 0 "#PWR02" H 1000 1150 50  0001 C CNN
-F 1 "GND" V 1005 1272 50  0000 R CNN
-F 2 "" H 1000 1400 50  0001 C CNN
-F 3 "" H 1000 1400 50  0001 C CNN
-	1    1000 1400
+P 1150 1400
+F 0 "#PWR02" H 1150 1150 50  0001 C CNN
+F 1 "GND" V 1155 1272 50  0000 R CNN
+F 2 "" H 1150 1400 50  0001 C CNN
+F 3 "" H 1150 1400 50  0001 C CNN
+	1    1150 1400
 	0    1    1    0   
 $EndComp
-Text GLabel 1300 1200 0    50   Input ~ 0
+Text GLabel 1450 1200 0    50   Input ~ 0
 DATA
 Wire Wire Line
-	2700 1200 2900 1200
+	2550 1200 2750 1200
 $Comp
 L power:GND #PWR01
 U 1 1 60E36150
-P 2900 1200
-F 0 "#PWR01" H 2900 950 50  0001 C CNN
-F 1 "GND" V 2905 1072 50  0000 R CNN
-F 2 "" H 2900 1200 50  0001 C CNN
-F 3 "" H 2900 1200 50  0001 C CNN
-	1    2900 1200
+P 2750 1200
+F 0 "#PWR01" H 2750 950 50  0001 C CNN
+F 1 "GND" V 2755 1072 50  0000 R CNN
+F 2 "" H 2750 1200 50  0001 C CNN
+F 3 "" H 2750 1200 50  0001 C CNN
+	1    2750 1200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2700 1400 2900 1400
+	2550 1400 2750 1400
 $Comp
 L power:VCC #PWR03
 U 1 1 60E36407
-P 2900 1400
-F 0 "#PWR03" H 2900 1250 50  0001 C CNN
-F 1 "VCC" V 2917 1528 50  0000 L CNN
-F 2 "" H 2900 1400 50  0001 C CNN
-F 3 "" H 2900 1400 50  0001 C CNN
-	1    2900 1400
+P 2750 1400
+F 0 "#PWR03" H 2750 1250 50  0001 C CNN
+F 1 "VCC" V 2767 1528 50  0000 L CNN
+F 2 "" H 2750 1400 50  0001 C CNN
+F 3 "" H 2750 1400 50  0001 C CNN
+	1    2750 1400
 	0    1    1    0   
 $EndComp
-Text GLabel 2700 1300 2    50   Input ~ 0
+Text GLabel 2550 1300 2    50   Input ~ 0
 RST
-$Comp
-L Device:D_Small D6
-U 1 1 60F6C9EA
-P 6500 1350
-F 0 "D6" V 6546 1282 50  0000 R CNN
-F 1 "D_Small" V 6455 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 1350 50  0001 C CNN
-F 3 "~" V 6500 1350 50  0001 C CNN
-	1    6500 1350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6550 1250 6500 1250
 $Comp
@@ -93,21 +71,10 @@ U 1 1 60F6C9E3
 P 6600 1100
 F 0 "MX6" H 6633 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 6633 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5975 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5975 1075 60  0001 C CNN
 F 3 "" H 5975 1075 60  0001 C CNN
 	1    6600 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D5
-U 1 1 60F6BE1D
-P 6000 1350
-F 0 "D5" V 6046 1282 50  0000 R CNN
-F 1 "D_Small" V 5955 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 1350 50  0001 C CNN
-F 3 "~" V 6000 1350 50  0001 C CNN
-	1    6000 1350
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6050 1250 6000 1250
@@ -117,21 +84,10 @@ U 1 1 60F6BE16
 P 6100 1100
 F 0 "MX5" H 6133 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 6133 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5475 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5475 1075 60  0001 C CNN
 F 3 "" H 5475 1075 60  0001 C CNN
 	1    6100 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D4
-U 1 1 60F6AECA
-P 5500 1350
-F 0 "D4" V 5546 1282 50  0000 R CNN
-F 1 "D_Small" V 5455 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 1350 50  0001 C CNN
-F 3 "~" V 5500 1350 50  0001 C CNN
-	1    5500 1350
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5550 1250 5500 1250
@@ -141,21 +97,10 @@ U 1 1 60F6AEC3
 P 5600 1100
 F 0 "MX4" H 5633 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 5633 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4975 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4975 1075 60  0001 C CNN
 F 3 "" H 4975 1075 60  0001 C CNN
 	1    5600 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D3
-U 1 1 60F69E76
-P 5000 1350
-F 0 "D3" V 5046 1282 50  0000 R CNN
-F 1 "D_Small" V 4955 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 1350 50  0001 C CNN
-F 3 "~" V 5000 1350 50  0001 C CNN
-	1    5000 1350
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5050 1250 5000 1250
@@ -165,21 +110,10 @@ U 1 1 60F69E6F
 P 5100 1100
 F 0 "MX3" H 5133 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 5133 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4475 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4475 1075 60  0001 C CNN
 F 3 "" H 4475 1075 60  0001 C CNN
 	1    5100 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D2
-U 1 1 60F68DEF
-P 4500 1350
-F 0 "D2" V 4546 1282 50  0000 R CNN
-F 1 "D_Small" V 4455 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 1350 50  0001 C CNN
-F 3 "~" V 4500 1350 50  0001 C CNN
-	1    4500 1350
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4550 1250 4500 1250
@@ -189,21 +123,10 @@ U 1 1 60F68DE8
 P 4600 1100
 F 0 "MX2" H 4633 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 4633 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3975 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3975 1075 60  0001 C CNN
 F 3 "" H 3975 1075 60  0001 C CNN
 	1    4600 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D1
-U 1 1 60F6770F
-P 4000 1350
-F 0 "D1" V 4046 1282 50  0000 R CNN
-F 1 "D_Small" V 3955 1282 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 1350 50  0001 C CNN
-F 3 "~" V 4000 1350 50  0001 C CNN
-	1    4000 1350
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4050 1250 4000 1250
@@ -213,7 +136,7 @@ U 1 1 60F64706
 P 4100 1100
 F 0 "MX1" H 4133 1323 60  0000 C CNN
 F 1 "MX-NoLED" H 4133 1249 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3475 1075 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3475 1075 60  0001 C CNN
 F 3 "" H 3475 1075 60  0001 C CNN
 	1    4100 1100
 	1    0    0    -1  
@@ -250,17 +173,6 @@ Text GLabel 3900 2950 0    50   Input ~ 0
 ROW3
 Text GLabel 3900 2200 0    50   Input ~ 0
 ROW2
-$Comp
-L Device:D_Small D23
-U 1 1 60F89FF4
-P 6000 3600
-F 0 "D23" V 6046 3532 50  0000 R CNN
-F 1 "D_Small" V 5955 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 3600 50  0001 C CNN
-F 3 "~" V 6000 3600 50  0001 C CNN
-	1    6000 3600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6050 3500 6000 3500
 $Comp
@@ -269,24 +181,10 @@ U 1 1 60F89FED
 P 6100 3350
 F 0 "MX23" H 6133 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 6133 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5475 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5475 3325 60  0001 C CNN
 F 3 "" H 5475 3325 60  0001 C CNN
 	1    6100 3350
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 3700 6000 3700
-Connection ~ 5500 3700
-$Comp
-L Device:D_Small D22
-U 1 1 60F89FE7
-P 5500 3600
-F 0 "D22" V 5546 3532 50  0000 R CNN
-F 1 "D_Small" V 5455 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 3600 50  0001 C CNN
-F 3 "~" V 5500 3600 50  0001 C CNN
-	1    5500 3600
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5550 3500 5500 3500
@@ -296,24 +194,10 @@ U 1 1 60F89FE0
 P 5600 3350
 F 0 "MX22" H 5633 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 5633 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4975 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4975 3325 60  0001 C CNN
 F 3 "" H 4975 3325 60  0001 C CNN
 	1    5600 3350
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3700 5500 3700
-Connection ~ 5000 3700
-$Comp
-L Device:D_Small D21
-U 1 1 60F89FDA
-P 5000 3600
-F 0 "D21" V 5046 3532 50  0000 R CNN
-F 1 "D_Small" V 4955 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 3600 50  0001 C CNN
-F 3 "~" V 5000 3600 50  0001 C CNN
-	1    5000 3600
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5050 3500 5000 3500
@@ -323,24 +207,10 @@ U 1 1 60F89FD3
 P 5100 3350
 F 0 "MX21" H 5133 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 5133 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4475 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4475 3325 60  0001 C CNN
 F 3 "" H 4475 3325 60  0001 C CNN
 	1    5100 3350
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 3700 5000 3700
-Connection ~ 4500 3700
-$Comp
-L Device:D_Small D20
-U 1 1 60F89FCD
-P 4500 3600
-F 0 "D20" V 4546 3532 50  0000 R CNN
-F 1 "D_Small" V 4455 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 3600 50  0001 C CNN
-F 3 "~" V 4500 3600 50  0001 C CNN
-	1    4500 3600
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4550 3500 4500 3500
@@ -350,26 +220,10 @@ U 1 1 60F89FC6
 P 4600 3350
 F 0 "MX20" H 4633 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 4633 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3975 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3975 3325 60  0001 C CNN
 F 3 "" H 3975 3325 60  0001 C CNN
 	1    4600 3350
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 3700 4500 3700
-Wire Wire Line
-	3900 3700 4000 3700
-Connection ~ 4000 3700
-$Comp
-L Device:D_Small D19
-U 1 1 60F89FC0
-P 4000 3600
-F 0 "D19" V 4046 3532 50  0000 R CNN
-F 1 "D_Small" V 3955 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 3600 50  0001 C CNN
-F 3 "~" V 4000 3600 50  0001 C CNN
-	1    4000 3600
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4050 3500 4000 3500
@@ -379,21 +233,10 @@ U 1 1 60F89FB9
 P 4100 3350
 F 0 "MX19" H 4133 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 4133 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3475 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3475 3325 60  0001 C CNN
 F 3 "" H 3475 3325 60  0001 C CNN
 	1    4100 3350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D18
-U 1 1 60F83417
-P 6500 2850
-F 0 "D18" V 6546 2782 50  0000 R CNN
-F 1 "D_Small" V 6455 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 2850 50  0001 C CNN
-F 3 "~" V 6500 2850 50  0001 C CNN
-	1    6500 2850
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6550 2750 6500 2750
@@ -405,154 +248,70 @@ U 1 1 60F83410
 P 6600 2600
 F 0 "MX18" H 6633 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 6633 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5975 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5975 2575 60  0001 C CNN
 F 3 "" H 5975 2575 60  0001 C CNN
 	1    6600 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 2950 6500 2950
-Connection ~ 6000 2950
-$Comp
-L Device:D_Small D17
-U 1 1 60F8340A
-P 6000 2850
-F 0 "D17" V 6046 2782 50  0000 R CNN
-F 1 "D_Small" V 5955 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 2850 50  0001 C CNN
-F 3 "~" V 6000 2850 50  0001 C CNN
-	1    6000 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	6050 2750 6000 2750
 Wire Wire Line
 	6250 2550 6250 3300
-Wire Wire Line
-	6250 1800 6250 2550
-Connection ~ 6250 2550
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX17
 U 1 1 60F83403
 P 6100 2600
 F 0 "MX17" H 6133 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 6133 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5475 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5475 2575 60  0001 C CNN
 F 3 "" H 5475 2575 60  0001 C CNN
 	1    6100 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 2950 6000 2950
-Connection ~ 5500 2950
-$Comp
-L Device:D_Small D16
-U 1 1 60F833FD
-P 5500 2850
-F 0 "D16" V 5546 2782 50  0000 R CNN
-F 1 "D_Small" V 5455 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 2850 50  0001 C CNN
-F 3 "~" V 5500 2850 50  0001 C CNN
-	1    5500 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	5550 2750 5500 2750
 Wire Wire Line
 	5750 2550 5750 3300
-Wire Wire Line
-	5750 1800 5750 2550
-Connection ~ 5750 2550
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX16
 U 1 1 60F833F6
 P 5600 2600
 F 0 "MX16" H 5633 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 5633 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4975 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4975 2575 60  0001 C CNN
 F 3 "" H 4975 2575 60  0001 C CNN
 	1    5600 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2950 5500 2950
-Connection ~ 5000 2950
-$Comp
-L Device:D_Small D15
-U 1 1 60F833F0
-P 5000 2850
-F 0 "D15" V 5046 2782 50  0000 R CNN
-F 1 "D_Small" V 4955 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 2850 50  0001 C CNN
-F 3 "~" V 5000 2850 50  0001 C CNN
-	1    5000 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	5050 2750 5000 2750
 Wire Wire Line
 	5250 2550 5250 3300
-Wire Wire Line
-	5250 1800 5250 2550
-Connection ~ 5250 2550
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX15
 U 1 1 60F833E9
 P 5100 2600
 F 0 "MX15" H 5133 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 5133 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4475 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4475 2575 60  0001 C CNN
 F 3 "" H 4475 2575 60  0001 C CNN
 	1    5100 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 2950 5000 2950
-Connection ~ 4500 2950
-$Comp
-L Device:D_Small D14
-U 1 1 60F833E3
-P 4500 2850
-F 0 "D14" V 4546 2782 50  0000 R CNN
-F 1 "D_Small" V 4455 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 2850 50  0001 C CNN
-F 3 "~" V 4500 2850 50  0001 C CNN
-	1    4500 2850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	4550 2750 4500 2750
 Wire Wire Line
 	4750 2550 4750 3300
-Wire Wire Line
-	4750 1800 4750 2550
-Connection ~ 4750 2550
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX14
 U 1 1 60F833DC
 P 4600 2600
 F 0 "MX14" H 4633 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 4633 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3975 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3975 2575 60  0001 C CNN
 F 3 "" H 3975 2575 60  0001 C CNN
 	1    4600 2600
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2950 4500 2950
-Wire Wire Line
-	3900 2950 4000 2950
-Connection ~ 4000 2950
-$Comp
-L Device:D_Small D13
-U 1 1 60F833D6
-P 4000 2850
-F 0 "D13" V 4046 2782 50  0000 R CNN
-F 1 "D_Small" V 3955 2782 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 2850 50  0001 C CNN
-F 3 "~" V 4000 2850 50  0001 C CNN
-	1    4000 2850
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4050 2750 4000 2750
@@ -565,21 +324,10 @@ U 1 1 60F833CF
 P 4100 2600
 F 0 "MX13" H 4133 2823 60  0000 C CNN
 F 1 "MX-NoLED" H 4133 2749 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3475 2575 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3475 2575 60  0001 C CNN
 F 3 "" H 3475 2575 60  0001 C CNN
 	1    4100 2600
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D12
-U 1 1 60F7E192
-P 6500 2100
-F 0 "D12" V 6546 2032 50  0000 R CNN
-F 1 "D_Small" V 6455 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 2100 50  0001 C CNN
-F 3 "~" V 6500 2100 50  0001 C CNN
-	1    6500 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6550 2000 6500 2000
@@ -589,24 +337,10 @@ U 1 1 60F7E18B
 P 6600 1850
 F 0 "MX12" H 6633 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 6633 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5975 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5975 1825 60  0001 C CNN
 F 3 "" H 5975 1825 60  0001 C CNN
 	1    6600 1850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 2200 6500 2200
-Connection ~ 6000 2200
-$Comp
-L Device:D_Small D11
-U 1 1 60F7E185
-P 6000 2100
-F 0 "D11" V 6046 2032 50  0000 R CNN
-F 1 "D_Small" V 5955 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 2100 50  0001 C CNN
-F 3 "~" V 6000 2100 50  0001 C CNN
-	1    6000 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6050 2000 6000 2000
@@ -616,24 +350,10 @@ U 1 1 60F7E17E
 P 6100 1850
 F 0 "MX11" H 6133 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 6133 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5475 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5475 1825 60  0001 C CNN
 F 3 "" H 5475 1825 60  0001 C CNN
 	1    6100 1850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 2200 6000 2200
-Connection ~ 5500 2200
-$Comp
-L Device:D_Small D10
-U 1 1 60F7E178
-P 5500 2100
-F 0 "D10" V 5546 2032 50  0000 R CNN
-F 1 "D_Small" V 5455 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 2100 50  0001 C CNN
-F 3 "~" V 5500 2100 50  0001 C CNN
-	1    5500 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5550 2000 5500 2000
@@ -643,24 +363,10 @@ U 1 1 60F7E171
 P 5600 1850
 F 0 "MX10" H 5633 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 5633 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4975 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4975 1825 60  0001 C CNN
 F 3 "" H 4975 1825 60  0001 C CNN
 	1    5600 1850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 2200 5500 2200
-Connection ~ 5000 2200
-$Comp
-L Device:D_Small D9
-U 1 1 60F7E16B
-P 5000 2100
-F 0 "D9" V 5046 2032 50  0000 R CNN
-F 1 "D_Small" V 4955 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 2100 50  0001 C CNN
-F 3 "~" V 5000 2100 50  0001 C CNN
-	1    5000 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5050 2000 5000 2000
@@ -670,24 +376,10 @@ U 1 1 60F7E164
 P 5100 1850
 F 0 "MX9" H 5133 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 5133 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 4475 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 4475 1825 60  0001 C CNN
 F 3 "" H 4475 1825 60  0001 C CNN
 	1    5100 1850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 2200 5000 2200
-Connection ~ 4500 2200
-$Comp
-L Device:D_Small D8
-U 1 1 60F7E15E
-P 4500 2100
-F 0 "D8" V 4546 2032 50  0000 R CNN
-F 1 "D_Small" V 4455 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 2100 50  0001 C CNN
-F 3 "~" V 4500 2100 50  0001 C CNN
-	1    4500 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4550 2000 4500 2000
@@ -697,26 +389,10 @@ U 1 1 60F7E157
 P 4600 1850
 F 0 "MX8" H 4633 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 4633 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3975 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3975 1825 60  0001 C CNN
 F 3 "" H 3975 1825 60  0001 C CNN
 	1    4600 1850
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2200 4500 2200
-Wire Wire Line
-	3900 2200 4000 2200
-Connection ~ 4000 2200
-$Comp
-L Device:D_Small D7
-U 1 1 60F7E151
-P 4000 2100
-F 0 "D7" V 4046 2032 50  0000 R CNN
-F 1 "D_Small" V 3955 2032 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 2100 50  0001 C CNN
-F 3 "~" V 4000 2100 50  0001 C CNN
-	1    4000 2100
-	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	4050 2000 4000 2000
@@ -726,47 +402,16 @@ U 1 1 60F7E14A
 P 4100 1850
 F 0 "MX7" H 4133 2073 60  0000 C CNN
 F 1 "MX-NoLED" H 4133 1999 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 3475 1825 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 3475 1825 60  0001 C CNN
 F 3 "" H 3475 1825 60  0001 C CNN
 	1    4100 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 1450 6500 1450
-Wire Wire Line
-	5000 1450 5500 1450
 Connection ~ 4000 1450
-Wire Wire Line
-	4000 1450 4500 1450
-Connection ~ 6000 1450
-Connection ~ 5500 1450
-Wire Wire Line
-	5500 1450 6000 1450
-Connection ~ 5000 1450
-Connection ~ 4500 1450
-Wire Wire Line
-	4500 1450 5000 1450
 Connection ~ 6750 1050
 Connection ~ 6750 1800
 Wire Wire Line
 	6750 1800 6750 1050
-Connection ~ 6250 1800
-Connection ~ 6250 1050
-Wire Wire Line
-	6250 1050 6250 1800
-Connection ~ 5750 1800
-Connection ~ 5750 1050
-Wire Wire Line
-	5750 1050 5750 1800
-Connection ~ 5250 1800
-Connection ~ 5250 1050
-Wire Wire Line
-	5250 1050 5250 1800
-Connection ~ 4750 1800
-Connection ~ 4750 1050
-Wire Wire Line
-	4750 1050 4750 1800
-Connection ~ 6000 3700
 Connection ~ 6750 2550
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX24
@@ -774,7 +419,7 @@ U 1 1 60F89FFA
 P 6600 3350
 F 0 "MX24" H 6633 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 6633 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED-Reversible" H 5975 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-1U-NoLED-Reversible" H 5975 3325 60  0001 C CNN
 F 3 "" H 5975 3325 60  0001 C CNN
 	1    6600 3350
 	1    0    0    -1  
@@ -787,25 +432,25 @@ Wire Wire Line
 Connection ~ 4250 1800
 Wire Wire Line
 	4250 1800 4250 2550
-NoConn ~ 2700 1100
-NoConn ~ 1300 1100
+NoConn ~ 2550 1100
+NoConn ~ 1450 1100
 Wire Wire Line
 	6750 2550 6750 3225
-Text GLabel 2700 1700 2    50   Input ~ 0
+Text GLabel 2550 1700 2    50   Input ~ 0
 COL1
-Text GLabel 2700 1800 2    50   Input ~ 0
+Text GLabel 2550 1800 2    50   Input ~ 0
 COL2
-Text GLabel 2700 1900 2    50   Input ~ 0
+Text GLabel 2550 1900 2    50   Input ~ 0
 COL3
-Text GLabel 2700 2000 2    50   Input ~ 0
+Text GLabel 2550 2000 2    50   Input ~ 0
 COL4
-Text GLabel 2700 2100 2    50   Input ~ 0
+Text GLabel 2550 2100 2    50   Input ~ 0
 COL5
-Text GLabel 2700 2200 2    50   Input ~ 0
+Text GLabel 2550 2200 2    50   Input ~ 0
 COL6
-Text GLabel 1300 1800 0    50   Input ~ 0
+Text GLabel 1450 1800 0    50   Input ~ 0
 RA
-Text GLabel 1300 1900 0    50   Input ~ 0
+Text GLabel 1450 1900 0    50   Input ~ 0
 RB
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX25
@@ -813,18 +458,11 @@ U 1 1 61234378
 P 6950 3350
 F 0 "MX25" H 6983 3573 60  0000 C CNN
 F 1 "MX-NoLED" H 6983 3499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-2U-ReversedStabilizers-NoLED-Reversible" H 6325 3325 60  0001 C CNN
+F 2 "Lyrae:MXOnly-2U-ReversedStabilizers-NoLED-Reversible" H 6325 3325 60  0001 C CNN
 F 3 "" H 6325 3325 60  0001 C CNN
 	1    6950 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 3500 6725 3500
-Connection ~ 6725 3500
-Wire Wire Line
-	6725 3500 6900 3500
-Wire Wire Line
-	6000 3700 6725 3700
 Wire Wire Line
 	6750 3225 7100 3225
 Wire Wire Line
@@ -832,13 +470,13 @@ Wire Wire Line
 Connection ~ 6750 3225
 Wire Wire Line
 	6750 3225 6750 3300
-Text GLabel 1300 1700 0    50   Input ~ 0
+Text GLabel 1450 1700 0    50   Input ~ 0
 ROW1
-Text GLabel 2700 1600 2    50   Input ~ 0
+Text GLabel 2550 1600 2    50   Input ~ 0
 ROW2
-Text GLabel 1300 2200 0    50   Input ~ 0
+Text GLabel 1450 2200 0    50   Input ~ 0
 ROW3
-Text GLabel 1300 2100 0    50   Input ~ 0
+Text GLabel 1450 2100 0    50   Input ~ 0
 ROW4
 $Comp
 L Connector_Generic:Conn_01x03 J1
@@ -846,7 +484,7 @@ U 1 1 61296A65
 P 1575 2725
 F 0 "J1" H 1493 2400 50  0000 C CNN
 F 1 "PJ320" H 1493 2491 50  0000 C CNN
-F 2 "kbd:PJ320-Reversible" H 1575 2725 50  0001 C CNN
+F 2 "Lyrae:PJ320-Reversible" H 1575 2725 50  0001 C CNN
 F 3 "~" H 1575 2725 50  0001 C CNN
 	1    1575 2725
 	-1   0    0    1   
@@ -884,12 +522,12 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 61057D21
-P 9500 1600
-F 0 "H5" H 9600 1646 50  0000 L CNN
-F 1 "Lyrae_Logo_11mm" H 9600 1555 50  0000 L CNN
-F 2 "kbd:Lyrae_Icon_11mm" H 9500 1600 50  0001 C CNN
-F 3 "~" H 9500 1600 50  0001 C CNN
-	1    9500 1600
+P 8500 1600
+F 0 "H5" H 8600 1646 50  0000 L CNN
+F 1 "Lyrae_Logo_11mm" H 8600 1555 50  0000 L CNN
+F 2 "Lyrae:Lyrae_Icon_11mm" H 8500 1600 50  0001 C CNN
+F 3 "~" H 8500 1600 50  0001 C CNN
+	1    8500 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -897,8 +535,8 @@ L Device:Rotary_Encoder_Switch ENC1
 U 1 1 6111B58B
 P 7800 3350
 F 0 "ENC1" H 7800 2983 50  0000 C CNN
-F 1 "Rotary_Encoder_Switch" H 7800 3074 50  0000 C CNN
-F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 7650 3510 50  0001 C CNN
+F 1 "EC11K152406" H 7800 3074 50  0000 C CNN
+F 2 "Lyrae:RotaryEncoder_Alps_EC11K-Switch_Vertical_H20mm_TwoSided" H 7650 3510 50  0001 C CNN
 F 3 "~" H 7800 3610 50  0001 C CNN
 	1    7800 3350
 	-1   0    0    1   
@@ -916,20 +554,8 @@ F 3 "" H 8150 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8100 3350 8150 3350
-$Comp
-L Device:D_Small D24
-U 1 1 60F8A001
-P 6725 3600
-F 0 "D24" V 6771 3532 50  0000 R CNN
-F 1 "D_Small" V 6680 3532 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6725 3600 50  0001 C CNN
-F 3 "~" V 6725 3600 50  0001 C CNN
-	1    6725 3600
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6725 3700 6725 3750
-Connection ~ 6725 3700
 Wire Wire Line
 	6725 3750 7500 3750
 Wire Wire Line
@@ -940,105 +566,438 @@ Text GLabel 8100 3450 2    50   Input ~ 0
 RA
 Text GLabel 8100 3250 2    50   Input ~ 0
 RB
-Text GLabel 1300 2000 0    50   Input ~ 0
+Text GLabel 1450 2000 0    50   Input ~ 0
 COL7
+Connection ~ 4750 2550
+Wire Wire Line
+	4750 1800 4750 2550
+Connection ~ 5250 2550
+Wire Wire Line
+	5250 1800 5250 2550
+Connection ~ 5750 2550
+Wire Wire Line
+	5750 1800 5750 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	6250 1800 6250 2550
+Connection ~ 4750 1800
+Connection ~ 4750 1050
+Wire Wire Line
+	4750 1050 4750 1800
+Connection ~ 5250 1800
+Connection ~ 5250 1050
+Wire Wire Line
+	5250 1050 5250 1800
+Connection ~ 5750 1800
+Connection ~ 5750 1050
+Wire Wire Line
+	5750 1050 5750 1800
+Connection ~ 6250 1800
+Connection ~ 6250 1050
+Wire Wire Line
+	6250 1050 6250 1800
+$Comp
+L Device:D_Small D1
+U 1 1 60F6770F
+P 4000 1350
+F 0 "D1" V 4046 1282 50  0000 R CNN
+F 1 "1N4148" V 3955 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 1350 50  0001 C CNN
+F 3 "~" V 4000 1350 50  0001 C CNN
+	1    4000 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3900 2200 4000 2200
+Wire Wire Line
+	3900 2950 4000 2950
+Wire Wire Line
+	6550 3500 6725 3500
+Wire Wire Line
+	3900 3700 4000 3700
+Wire Wire Line
+	4000 1450 4500 1450
+$Comp
+L Device:D_Small D2
+U 1 1 6114E0EF
+P 4500 1350
+F 0 "D2" V 4546 1282 50  0000 R CNN
+F 1 "1N4148" V 4455 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 1350 50  0001 C CNN
+F 3 "~" V 4500 1350 50  0001 C CNN
+	1    4500 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4500 1450
+Wire Wire Line
+	4500 1450 5000 1450
+$Comp
+L Device:D_Small D3
+U 1 1 6114E3A5
+P 5000 1350
+F 0 "D3" V 5046 1282 50  0000 R CNN
+F 1 "1N4148" V 4955 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 1350 50  0001 C CNN
+F 3 "~" V 5000 1350 50  0001 C CNN
+	1    5000 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 1450
+Wire Wire Line
+	5000 1450 5500 1450
+$Comp
+L Device:D_Small D4
+U 1 1 6114E78C
+P 5500 1350
+F 0 "D4" V 5546 1282 50  0000 R CNN
+F 1 "1N4148" V 5455 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 1350 50  0001 C CNN
+F 3 "~" V 5500 1350 50  0001 C CNN
+	1    5500 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5500 1450
+Wire Wire Line
+	5500 1450 6000 1450
+$Comp
+L Device:D_Small D5
+U 1 1 6114EB4A
+P 6000 1350
+F 0 "D5" V 6046 1282 50  0000 R CNN
+F 1 "1N4148" V 5955 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 1350 50  0001 C CNN
+F 3 "~" V 6000 1350 50  0001 C CNN
+	1    6000 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6000 1450
+Wire Wire Line
+	6000 1450 6500 1450
+$Comp
+L Device:D_Small D6
+U 1 1 6114EDC4
+P 6500 1350
+F 0 "D6" V 6546 1282 50  0000 R CNN
+F 1 "1N4148" V 6455 1282 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 1350 50  0001 C CNN
+F 3 "~" V 6500 1350 50  0001 C CNN
+	1    6500 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D12
+U 1 1 6114F226
+P 6500 2100
+F 0 "D12" V 6546 2032 50  0000 R CNN
+F 1 "1N4148" V 6455 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 2100 50  0001 C CNN
+F 3 "~" V 6500 2100 50  0001 C CNN
+	1    6500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D11
+U 1 1 6114F624
+P 6000 2100
+F 0 "D11" V 6046 2032 50  0000 R CNN
+F 1 "1N4148" V 5955 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 2100 50  0001 C CNN
+F 3 "~" V 6000 2100 50  0001 C CNN
+	1    6000 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6000 2200
+Wire Wire Line
+	6000 2200 6500 2200
+$Comp
+L Device:D_Small D10
+U 1 1 6114F9C5
+P 5500 2100
+F 0 "D10" V 5546 2032 50  0000 R CNN
+F 1 "1N4148" V 5455 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 2100 50  0001 C CNN
+F 3 "~" V 5500 2100 50  0001 C CNN
+	1    5500 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5500 2200
+Wire Wire Line
+	5500 2200 6000 2200
+$Comp
+L Device:D_Small D9
+U 1 1 6114FCDF
+P 5000 2100
+F 0 "D9" V 5046 2032 50  0000 R CNN
+F 1 "1N4148" V 4955 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 2100 50  0001 C CNN
+F 3 "~" V 5000 2100 50  0001 C CNN
+	1    5000 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 2200
+Wire Wire Line
+	5000 2200 5500 2200
+$Comp
+L Device:D_Small D8
+U 1 1 6114FFF4
+P 4500 2100
+F 0 "D8" V 4546 2032 50  0000 R CNN
+F 1 "1N4148" V 4455 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 2100 50  0001 C CNN
+F 3 "~" V 4500 2100 50  0001 C CNN
+	1    4500 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4500 2200
+Wire Wire Line
+	4500 2200 5000 2200
+$Comp
+L Device:D_Small D7
+U 1 1 611502A5
+P 4000 2100
+F 0 "D7" V 4046 2032 50  0000 R CNN
+F 1 "1N4148" V 3955 2032 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 2100 50  0001 C CNN
+F 3 "~" V 4000 2100 50  0001 C CNN
+	1    4000 2100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 2200
+Wire Wire Line
+	4000 2200 4500 2200
+$Comp
+L Device:D_Small D13
+U 1 1 61150529
+P 4000 2850
+F 0 "D13" V 4046 2782 50  0000 R CNN
+F 1 "1N4148" V 3955 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 2850 50  0001 C CNN
+F 3 "~" V 4000 2850 50  0001 C CNN
+	1    4000 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 2950
+Wire Wire Line
+	4000 2950 4500 2950
+$Comp
+L Device:D_Small D14
+U 1 1 61150C7A
+P 4500 2850
+F 0 "D14" V 4546 2782 50  0000 R CNN
+F 1 "1N4148" V 4455 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 2850 50  0001 C CNN
+F 3 "~" V 4500 2850 50  0001 C CNN
+	1    4500 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4500 2950
+Wire Wire Line
+	4500 2950 5000 2950
+$Comp
+L Device:D_Small D15
+U 1 1 61151039
+P 5000 2850
+F 0 "D15" V 5046 2782 50  0000 R CNN
+F 1 "1N4148" V 4955 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 2850 50  0001 C CNN
+F 3 "~" V 5000 2850 50  0001 C CNN
+	1    5000 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 2950
+Wire Wire Line
+	5000 2950 5500 2950
+$Comp
+L Device:D_Small D16
+U 1 1 611514F7
+P 5500 2850
+F 0 "D16" V 5546 2782 50  0000 R CNN
+F 1 "1N4148" V 5455 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 2850 50  0001 C CNN
+F 3 "~" V 5500 2850 50  0001 C CNN
+	1    5500 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5500 2950
+Wire Wire Line
+	5500 2950 6000 2950
+$Comp
+L Device:D_Small D17
+U 1 1 611517DF
+P 6000 2850
+F 0 "D17" V 6046 2782 50  0000 R CNN
+F 1 "1N4148" V 5955 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 2850 50  0001 C CNN
+F 3 "~" V 6000 2850 50  0001 C CNN
+	1    6000 2850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6000 2950
+Wire Wire Line
+	6000 2950 6500 2950
+$Comp
+L Device:D_Small D18
+U 1 1 61151A9F
+P 6500 2850
+F 0 "D18" V 6546 2782 50  0000 R CNN
+F 1 "1N4148" V 6455 2782 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6500 2850 50  0001 C CNN
+F 3 "~" V 6500 2850 50  0001 C CNN
+	1    6500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D24
+U 1 1 61151EF2
+P 6725 3600
+F 0 "D24" V 6771 3532 50  0000 R CNN
+F 1 "1N4148" V 6680 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6725 3600 50  0001 C CNN
+F 3 "~" V 6725 3600 50  0001 C CNN
+	1    6725 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6725 3700
+Connection ~ 6725 3500
+Wire Wire Line
+	6725 3500 6900 3500
 $Comp
 L Device:D_Small D25
-U 1 1 610BAF4C
+U 1 1 6115249B
 P 7500 3650
 F 0 "D25" V 7546 3582 50  0000 R CNN
-F 1 "D_Small" V 7455 3582 50  0000 R CNN
-F 2 "kbd:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 7500 3650 50  0001 C CNN
+F 1 "1N4148" V 7455 3582 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 7500 3650 50  0001 C CNN
 F 3 "~" V 7500 3650 50  0001 C CNN
 	1    7500 3650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 6110EC6C
-P 7500 1650
-F 0 "H1" H 7600 1699 50  0000 L CNN
-F 1 "M2" H 7600 1608 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7500 1650 50  0001 C CNN
-F 3 "~" H 7500 1650 50  0001 C CNN
-	1    7500 1650
+L Device:D_Small D23
+U 1 1 611528BC
+P 6000 3600
+F 0 "D23" V 6046 3532 50  0000 R CNN
+F 1 "1N4148" V 5955 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 6000 3600 50  0001 C CNN
+F 3 "~" V 6000 3600 50  0001 C CNN
+	1    6000 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6000 3700
+Wire Wire Line
+	6000 3700 6725 3700
+$Comp
+L Device:D_Small D22
+U 1 1 61152EE7
+P 5500 3600
+F 0 "D22" V 5546 3532 50  0000 R CNN
+F 1 "1N4148" V 5455 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5500 3600 50  0001 C CNN
+F 3 "~" V 5500 3600 50  0001 C CNN
+	1    5500 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5500 3700
+Wire Wire Line
+	5500 3700 6000 3700
+$Comp
+L Device:D_Small D21
+U 1 1 61153251
+P 5000 3600
+F 0 "D21" V 5046 3532 50  0000 R CNN
+F 1 "1N4148" V 4955 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 5000 3600 50  0001 C CNN
+F 3 "~" V 5000 3600 50  0001 C CNN
+	1    5000 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3700 5500 3700
+$Comp
+L Device:D_Small D20
+U 1 1 611535E8
+P 4500 3600
+F 0 "D20" V 4546 3532 50  0000 R CNN
+F 1 "1N4148" V 4455 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4500 3600 50  0001 C CNN
+F 3 "~" V 4500 3600 50  0001 C CNN
+	1    4500 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4500 3700
+Wire Wire Line
+	4500 3700 5000 3700
+$Comp
+L Device:D_Small D19
+U 1 1 61153B24
+P 4000 3600
+F 0 "D19" V 4046 3532 50  0000 R CNN
+F 1 "1N4148" V 3955 3532 50  0000 R CNN
+F 2 "Lyrae:D_DO-35_SOD27_P7.62mm_Horizontal_2Sided" V 4000 3600 50  0001 C CNN
+F 3 "~" V 4000 3600 50  0001 C CNN
+	1    4000 3600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 3700
+Wire Wire Line
+	4000 3700 4500 3700
+NoConn ~ 2550 1500
+NoConn ~ 1450 1500
+NoConn ~ 1450 1600
+$Comp
+L Lyrae:ProMicro U1
+U 1 1 61203274
+P 2000 1700
+F 0 "U1" H 2000 2525 50  0000 C CNN
+F 1 "ProMicro" H 2000 2434 50  0000 C CNN
+F 2 "Lyrae:ProMicro_TwoSided" H 2000 1000 50  0001 C CNN
+F 3 "N/A" H 2750 300 50  0001 C CNN
+	1    2000 1700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 6110F98A
-P 7500 2150
-F 0 "H3" H 7600 2199 50  0000 L CNN
-F 1 "M2" H 7600 2108 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 7500 2150 50  0001 C CNN
-F 3 "~" H 7500 2150 50  0001 C CNN
-	1    7500 2150
+L Mechanical:MountingHole H1
+U 1 1 6117BE47
+P 7500 1600
+F 0 "H1" H 7600 1646 50  0000 L CNN
+F 1 "M2" H 7600 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7500 1600 50  0001 C CNN
+F 3 "~" H 7500 1600 50  0001 C CNN
+	1    7500 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 61110674
-P 8500 1650
-F 0 "H2" H 8600 1699 50  0000 L CNN
-F 1 "M2" H 8600 1608 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8500 1650 50  0001 C CNN
-F 3 "~" H 8500 1650 50  0001 C CNN
-	1    8500 1650
+L Mechanical:MountingHole H2
+U 1 1 6117C2B0
+P 8000 1600
+F 0 "H2" H 8100 1646 50  0000 L CNN
+F 1 "M2" H 8100 1555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 1600 50  0001 C CNN
+F 3 "~" H 8000 1600 50  0001 C CNN
+	1    8000 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 61113F05
-P 8500 2150
-F 0 "H4" H 8600 2199 50  0000 L CNN
-F 1 "M2" H 8600 2108 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 8500 2150 50  0001 C CNN
-F 3 "~" H 8500 2150 50  0001 C CNN
-	1    8500 2150
+L Mechanical:MountingHole H4
+U 1 1 6117C6F1
+P 8000 1850
+F 0 "H4" H 8100 1896 50  0000 L CNN
+F 1 "M2" H 8100 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 8000 1850 50  0001 C CNN
+F 3 "~" H 8000 1850 50  0001 C CNN
+	1    8000 1850
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
-U 1 1 61114882
-P 7500 1750
-F 0 "#PWR0104" H 7500 1500 50  0001 C CNN
-F 1 "GND" H 7505 1577 50  0000 C CNN
-F 2 "" H 7500 1750 50  0001 C CNN
-F 3 "" H 7500 1750 50  0001 C CNN
-	1    7500 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 61114F64
-P 8500 1750
-F 0 "#PWR0105" H 8500 1500 50  0001 C CNN
-F 1 "GND" H 8505 1577 50  0000 C CNN
-F 2 "" H 8500 1750 50  0001 C CNN
-F 3 "" H 8500 1750 50  0001 C CNN
-	1    8500 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 61115430
-P 8500 2250
-F 0 "#PWR0106" H 8500 2000 50  0001 C CNN
-F 1 "GND" H 8505 2077 50  0000 C CNN
-F 2 "" H 8500 2250 50  0001 C CNN
-F 3 "" H 8500 2250 50  0001 C CNN
-	1    8500 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 611156A6
-P 7500 2250
-F 0 "#PWR0107" H 7500 2000 50  0001 C CNN
-F 1 "GND" H 7505 2077 50  0000 C CNN
-F 2 "" H 7500 2250 50  0001 C CNN
-F 3 "" H 7500 2250 50  0001 C CNN
-	1    7500 2250
+L Mechanical:MountingHole H3
+U 1 1 6117D106
+P 7500 1850
+F 0 "H3" H 7600 1896 50  0000 L CNN
+F 1 "M2" H 7600 1805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 7500 1850 50  0001 C CNN
+F 3 "~" H 7500 1850 50  0001 C CNN
+	1    7500 1850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
