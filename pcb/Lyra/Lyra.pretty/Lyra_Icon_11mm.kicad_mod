@@ -1,8 +1,8 @@
-(module Lyrae_Icon_11mm (layer F.Cu) (tedit 6116AD5A)
+(module Lyra_Icon_11mm (layer F.Cu) (tedit 6116AD5A)
   (fp_text reference H5 (at 0 -6.5) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value Lyrae_Logo_11mm (at 0 6.5) (layer F.SilkS) hide
+  (fp_text value Lyra_Logo_11mm (at 0 6.5) (layer F.SilkS) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_poly (pts (xy 0.915563 -5.42108) (xy 1.503801 -5.307821) (xy 1.651 -5.263479) (xy 2.530566 -4.891395)

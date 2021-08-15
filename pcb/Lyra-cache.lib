@@ -82,12 +82,12 @@ X S2 S2 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Lyrae_ProMicro
+# Lyra_ProMicro
 #
-DEF Lyrae_ProMicro U 0 40 Y Y 1 F N
+DEF Lyra_ProMicro U 0 40 Y Y 1 F N
 F0 "U" 0 700 50 H V C CNN
-F1 "Lyrae_ProMicro" 0 -600 50 H V C CNN
-F2 "Lyrae:ProMicro" 0 -700 50 H I C CNN
+F1 "Lyra_ProMicro" 0 -600 50 H V C CNN
+F2 "Lyra:ProMicro" 0 -700 50 H I C CNN
 F3 "" 750 -1400 50 H I C CNN
 DRAW
 S -350 650 350 -550 0 1 0 N
