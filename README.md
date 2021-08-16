@@ -1,3 +1,5 @@
 # Lyra
-## 40%, Ortholinear, Split keyboard with knob support
-Build pics and guide coming soon
+
+## 40%, Ortholinear, Split keyboard with knob
+
+[Parts List and Build Guide(WIP)](build_guide.md)
