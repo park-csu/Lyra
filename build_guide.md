@@ -23,7 +23,7 @@
 | Name | Quantity | Remarks |
 |:-|:-|:-|
 | Mill-Max 315-43-164-41-003000    | 2     | Used to socket pro micro |
-| Mill-Max 3320-0-00-15-00-00-03-0 | 96    | Can be replaced by diode legs |
+| Mill-Max 3320-0-00-15-00-00-03-0 | 48    | Can be replaced by diode legs |
 
 # Build Guide
 Coming soon!
