@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.99.0-13181-gc0a6014114)*
-G04 #@! TF.CreationDate,2021-11-12T19:13:56+09:00*
+G04 #@! TF.CreationDate,2021-11-12T19:27:17+09:00*
 G04 #@! TF.ProjectId,Lyra,4c797261-2e6b-4696-9361-645f70636258,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.99.0-13181-gc0a6014114)) date 2021-11-12 19:13:56*
+G04 Created by KiCad (PCBNEW (5.99.0-13181-gc0a6014114)) date 2021-11-12 19:27:17*
 %MOMM*%
 %LPD*%
 G01*
@@ -29,7 +29,7 @@ G04 Aperture macros list*
 20,1,$1+$1,$6,$7,$8,$9,0*
 20,1,$1+$1,$8,$9,$2,$3,0*%
 G04 Aperture macros list end*
-%ADD10C,0.800000*%
+%ADD10C,1.000000*%
 %ADD11O,1.400000X1.200000*%
 %ADD12O,1.300000X1.200000*%
 %ADD13C,1.750000*%
